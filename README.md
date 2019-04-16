@@ -2,7 +2,7 @@
 
 # Mongoose Vampires
 
-For this two part homework assignment, you will be using some  mongoose commands and you will be **reading documentation**  to find **new** queries/techniques to complete the following activities. Researching queries and implementing them is a big part of this homework!
+For this homework assignment, you will be using some  mongoose commands and you will be **reading documentation**  to find **new** queries/techniques to complete the following activities. Researching queries and implementing them is a big part of this homework!
 
 ![mongoose](https://s-media-cache-ak0.pinimg.com/564x/ee/b7/a9/eeb7a99383582d53e65ffcc0e4a225bd.jpg)
 
@@ -10,8 +10,7 @@ For this two part homework assignment, you will be using some  mongoose commands
 Utilize the following resources to research the commands you will need:
 - Your notes from today
 - [MongoDB Manual](https://docs.mongodb.org/manual/reference/operator/query/#query-selectors)
-- [Mongoose Docs](http://mongoosejs.com/docs/guide.html)
-- Shahzad's cheatsheet 
+- [Mongoose Docs](http://mongoosejs.com/docs/guide.html) 
 
 ## Setup
 1. Start your mongo server with `mongod`
@@ -167,7 +166,7 @@ Select all the vampires that:
 "Commit 5 - selected more vampires"
 <hr>
 
-# Part 2
+# Hungry for More??? OPTIONAL Part 2
 
 ### Before you continue on to part two: check it out/remember: Mongoose has some sweet helper functions that can make all this a little easier. See below
 
