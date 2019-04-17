@@ -37,13 +37,13 @@ mongoose.connection.on('disconnected', () => {
 //Write your answers to add, query, update, remove, and Hungry for More below.
 
 //adds all my vamp data instead of hard insert
-// Vampires.collection.insertMany(vampireData,(err, data) => {
-//     // if (err){
-//     //     console.log(err);
-//     // }
-//     console.log("added provided vampire data")
-//     mongoose.connection.close();
-//   });
+Vampires.collection.insertMany(vampireData,(err, data) => {
+    // if (err){
+    //     console.log(err);
+    // }
+    console.log("added provided vampire data")
+    mongoose.connection.close();
+  });
 
 
 // Vampires.create({
