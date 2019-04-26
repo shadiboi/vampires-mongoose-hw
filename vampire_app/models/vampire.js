@@ -17,3 +17,21 @@ const vampireSchema = new Schema({
 const Vampires = mongoose.model('Vampires', vampireSchema);
 
 module.exports=Vampires
+
+
+
+router.post('/', (req, res)=>{
+    Donut.create( 
+        req.body,
+     (err,createdDonut) => {
+        if(err){
+            console.log(err)
+            res.send
+        }else{
+            console.log(createdDonut)
+            res.redirect('/donuts');
+        }
+ })
+ 
+
+

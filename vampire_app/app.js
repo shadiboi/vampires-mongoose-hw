@@ -163,21 +163,59 @@ mongoose.connection.on('disconnected', () => {
 //     });
 
 //5. have greater than 150 AND fewer than 500 victims
-Vampires.find({
-        victims:{
-        $gt:150,
-        $lt: 500
-    }
-    },(err,foundVics) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log(foundVics);
-        }
-    });
+// Vampires.find({
+//         victims:{
+//         $gt:150,
+//         $lt: 500
+//     }
+//     },(err,foundVics) => {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             console.log(foundVics);
+//         }
+//     });
 
 /////////////////////////////////////////////////
 // ### Select by exists or does not exist
+//1. have a title property
+// Vampires.find({
+//    title: {$exists: true}
+//     },(err,foundTitles) => {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             console.log(foundTitles);
+//         }
+//     });
+
+
+// 2. do not have a victims property
+// Vampires.find({
+//     victims: {$exists: false}
+//      },(err,foundTitles) => {
+//          if (err) {
+//              console.log(err);
+//          } else {
+//              console.log(foundTitles);
+//          }
+//      });
+
+// 3. have a title AND no victims
+Vampires.find({
+    title: {$exists: true},
+    victims: {$exists: false}
+     },(err,foundStuff) => {
+         if (err) {
+             console.log(err);
+         } else {
+             console.log(foundStuff);
+         }
+     });
+
+// 4. have victims AND the victims they have are greater than 1000
+
+
 
 /////////////////////////////////////////////////
 // ### Select with OR
